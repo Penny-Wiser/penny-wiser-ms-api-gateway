@@ -1,0 +1,19 @@
+# Zuul
+zuul:
+  routes:
+    userms:
+      path: /userms/**
+      sensitiveHeaders:
+        url: http://localhost:9091
+    billingms:
+      path: /billingms/**
+      sensitiveHeaders:
+      url: http://localhost:9092
+
+ribbon:
+  eureka:
+    enabled: false
+
+userms:
+  ribbon:
+    listOfServers: http://localhost:9091

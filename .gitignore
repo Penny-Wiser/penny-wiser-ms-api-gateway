@@ -1,0 +1,7 @@
+.idea/
+*.ipr
+*.iml
+
+/target/
+src/main/java/com/penniless/springboot/logs/
+.DS_Store
